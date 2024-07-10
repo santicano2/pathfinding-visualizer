@@ -35,10 +35,9 @@ export async function constructBorder(
       ) {
         grid[row][col].isWall = true;
         const tileElement = document.getElementById(`${row}-${col}`);
-
         if (tileElement) {
           tileElement.classList.add(
-            ...WALL_TILE_STYLE.split("	"),
+            ...WALL_TILE_STYLE.split(" "),
             "animate-wall"
           );
         }
