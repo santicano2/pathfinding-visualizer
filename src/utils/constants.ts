@@ -36,7 +36,7 @@ export const WALL_TILE_STYLE = TILE_STYLE + " bg-gray-200";
 export const PATH_TILE_STYLE = TILE_STYLE + " bg-green-600";
 
 export const MAZES: MazeSelectType[] = [
-  { name: "No Maze", value: "NONE" },
+  { name: "Sin laberinto", value: "NONE" },
   { name: "Binary Tree", value: "BINARY_TREE" },
   { name: "Recursive Division", value: "RECURSIVE_DIVISION" },
 ];
@@ -49,9 +49,9 @@ export const PATHFINDING_ALGORITHMS: AlgorithmSelectType[] = [
 ];
 
 export const SPEEDS: SpeedSelectType[] = [
-  { name: "Slow", value: 2 },
-  { name: "Medium", value: 1 },
-  { name: "Fast", value: 0.5 },
+  { name: "Lento", value: 2 },
+  { name: "Medio", value: 1 },
+  { name: "Rapido", value: 0.5 },
 ];
 
 export const SLEEP_TIME = 8;
