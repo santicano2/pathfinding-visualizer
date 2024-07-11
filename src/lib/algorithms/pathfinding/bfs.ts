@@ -1,6 +1,6 @@
 import { getUntraversedNeighbors } from "../../../utils/getUntraversedNeighbors";
 import { isEqual } from "../../../utils/helpers";
-import { isInQueue } from "../../../utils/isinQueue";
+import { isInQueue } from "../../../utils/isInQueue";
 import { GridType, TileType } from "../../../utils/types";
 
 export const bfs = (grid: GridType, startTile: TileType, endTile: TileType) => {
