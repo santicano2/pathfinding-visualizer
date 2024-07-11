@@ -10,6 +10,7 @@ import { useSpeed } from "../hooks/useSpeed";
 
 import { Select } from "./Select";
 import { PlayButton } from "./PlayButton";
+import { runPathfindingAlgorithm } from "../utils/runPathfindingAlgorithm";
 
 export function Nav() {
   const [isDisabled, setIsDisabled] = useState(false);
@@ -55,7 +56,15 @@ export function Nav() {
       return;
     }
 
-    // run the alhorithm
+    const { traversedTiles, path } = runPathfindingAlgorithm({
+      algorithm,
+      grid,
+      startTile,
+      endTile,
+    });
+
+    console.log("traversedTiles", traversedTiles);
+    console.log("path", path);
   };
 
   return (
